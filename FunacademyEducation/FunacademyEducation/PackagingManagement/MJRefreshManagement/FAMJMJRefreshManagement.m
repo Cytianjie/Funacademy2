@@ -15,12 +15,12 @@
        faHeaderWithRefreshingBlock();
     }];
     // 设置文字
-    [header setTitle:@"Pull down to refresh" forState:MJRefreshStateIdle];
-    [header setTitle:@"Release to refresh" forState:MJRefreshStatePulling];
-    [header setTitle:@"Loading ..." forState:MJRefreshStateRefreshing];
+   // [header setTitle:@"Pull down to refresh" forState:MJRefreshStateIdle];
+   // [header setTitle:@"Release to refresh" forState:MJRefreshStatePulling];
+    //[header setTitle:@"Loading ..." forState:MJRefreshStateRefreshing];
     
     // 隐藏时间
-    header.lastUpdatedTimeLabel.hidden = YES;
+    //header.lastUpdatedTimeLabel.hidden = YES;
     
     // 隐藏状态
     //header.stateLabel.hidden = YES;

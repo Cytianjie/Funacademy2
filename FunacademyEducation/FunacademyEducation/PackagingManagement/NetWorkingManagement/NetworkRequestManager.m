@@ -48,7 +48,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
         [laoding loadingDisappear];
-        [LoadDataSuggest showFailWith:@"网络错误"];
+        [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
     }];
 }
 -(void)GET_URL:(NSString *)url withLoading:(BOOL)isLoading Success:(ResponseSuccess)success Failure:(ResponseFailure)failure{
@@ -65,7 +65,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
         [laoding loadingDisappear];
-        [LoadDataSuggest showFailWith:@"网络错误"];
+        [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
     }];
 }
 @end

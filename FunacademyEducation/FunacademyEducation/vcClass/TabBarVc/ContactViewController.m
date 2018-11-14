@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = NSLocalizedString(@"tab3NavTitle", nil);
+    
     EaseUsersListViewController *listViewController = [[EaseUsersListViewController alloc] init];
     [self addChildViewController:listViewController];
     [self.view addSubview:listViewController.view];

@@ -10,6 +10,7 @@
 #import "ShareMessageTableViewCell.h"
 
 
+
 @interface ShareMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray * dataArray;
 @end
@@ -19,9 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = NSLocalizedString(@"tab1NavTitle", nil);
     [self setDataConfiguration];
-    //896
-    NSLog(@"---->%f",[UIScreen mainScreen].bounds.size.height);
+    
 }
 -(void)setDataConfiguration{
     //http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6
@@ -30,6 +32,10 @@
 //    } Failure:^(NSURLSessionTask * _Nonnull task, NSError * _Nonnull error) {
 //        
 //    }];
+   
+    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
+        NSLog(@"------->>>>suaxin");
+    }];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;

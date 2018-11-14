@@ -1,0 +1,69 @@
+
+/* Class = "UIButton"; normalTitle = "点赞(120)"; ObjectID = "0AS-r0-Y9H"; */
+"0AS-r0-Y9H.normalTitle" = "点赞(120)";
+
+/* Class = "UINavigationItem"; title = " "; ObjectID = "1EJ-BT-F5F"; */
+"1EJ-BT-F5F.title" = " ";
+
+/* Class = "UILabel"; text = "手机号："; ObjectID = "6XL-xv-dhF"; */
+"6XL-xv-dhF.text" = "手机号：";
+
+/* Class = "UILabel"; text = "密码："; ObjectID = "6gr-iv-xTo"; */
+"6gr-iv-xTo.text" = "密码：";
+
+/* Class = "UINavigationItem"; title = "消息"; ObjectID = "7Gd-im-jTb"; */
+"7Gd-im-jTb.title" = "消息";
+
+/* Class = "UILabel"; text = "登录"; ObjectID = "7je-TE-Vg1"; */
+"7je-TE-Vg1.text" = "登录";
+
+/* Class = "UIButton"; normalTitle = "评论(110)"; ObjectID = "Fyu-39-Or2"; */
+"Fyu-39-Or2.normalTitle" = "评论(110)";
+
+/* Class = "UILabel"; text = "新华社北京11月12日电 外交部发言人陆慷12日宣布：应巴布亚新几内亚独立国总督达达埃和总理奥尼尔、文莱达鲁萨兰国苏丹哈桑纳尔、菲律宾共和国总统杜特尔特邀请，国家主席习近平将于11月15日至21日对上述三国进行国事访问，并在巴新同建交太平洋岛国领导人会晤。其间，应巴布亚新几内亚独立国总理奥尼尔邀请，国家主席习近平将于11月17日至18日出席在巴新莫尔兹比港举行的亚太经合组织第二十六次领导人非正式会议。"; ObjectID = "G6B-Tr-gGd"; */
+"G6B-Tr-gGd.text" = "新华社北京11月12日电 外交部发言人陆慷12日宣布：应巴布亚新几内亚独立国总督达达埃和总理奥尼尔、文莱达鲁萨兰国苏丹哈桑纳尔、菲律宾共和国总统杜特尔特邀请，国家主席习近平将于11月15日至21日对上述三国进行国事访问，并在巴新同建交太平洋岛国领导人会晤。其间，应巴布亚新几内亚独立国总理奥尼尔邀请，国家主席习近平将于11月17日至18日出席在巴新莫尔兹比港举行的亚太经合组织第二十六次领导人非正式会议。";
+
+/* Class = "UIButton"; normalTitle = "分享(100)"; ObjectID = "I3J-8b-CJs"; */
+"I3J-8b-CJs.normalTitle" = "分享(100)";
+
+/* Class = "UILabel"; text = "白开水"; ObjectID = "N0w-SC-O08"; */
+"N0w-SC-O08.text" = "白开水";
+
+/* Class = "UITabBarItem"; title = "每日分享"; ObjectID = "N4a-lU-jiX"; */
+"N4a-lU-jiX.title" = "每日分享";
+
+/* Class = "UILabel"; text = "PK1(中1班)"; ObjectID = "VAU-Uy-SLr"; */
+"VAU-Uy-SLr.text" = "PK1(中1班)";
+
+/* Class = "UIButton"; normalTitle = "登 录"; ObjectID = "YH5-kF-Oxf"; */
+"YH5-kF-Oxf.normalTitle" = "登 录";
+
+/* Class = "UITabBarItem"; title = "消息"; ObjectID = "YaP-60-JEq"; */
+"YaP-60-JEq.title" = "消息";
+
+/* Class = "UINavigationItem"; title = "每日分享"; ObjectID = "a0A-nI-R3F"; */
+"a0A-nI-R3F.title" = "每日分享";
+
+/* Class = "UIButton"; normalTitle = "全部"; ObjectID = "eWg-V7-nff"; */
+"eWg-V7-nff.normalTitle" = "全部";
+
+/* Class = "UINavigationItem"; title = "我"; ObjectID = "eoY-3n-U86"; */
+"eoY-3n-U86.title" = "我";
+
+/* Class = "UITabBarItem"; title = "我"; ObjectID = "fth-zb-WN9"; */
+"fth-zb-WN9.title" = "我";
+
+/* Class = "UITabBarItem"; title = "联系人"; ObjectID = "hEH-oH-Ton"; */
+"hEH-oH-Ton.title" = "联系人";
+
+/* Class = "UILabel"; text = "2018-11-12"; ObjectID = "mwD-Fr-xl2"; */
+"mwD-Fr-xl2.text" = "2018-11-12";
+
+/* Class = "UINavigationItem"; title = "联系人"; ObjectID = "quS-GJ-f8e"; */
+"quS-GJ-f8e.title" = "联系人";
+
+/* Class = "UINavigationItem"; title = "登录"; ObjectID = "rbp-jM-bFa"; */
+"rbp-jM-bFa.title" = "登录";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "tVq-Du-AK1"; */
+"tVq-Du-AK1.normalTitle" = "登录";

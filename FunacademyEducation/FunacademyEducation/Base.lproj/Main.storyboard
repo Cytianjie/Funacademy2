@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KCR-nl-Qns">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a1M-QK-4kA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -272,6 +272,9 @@
                         <viewLayoutGuide key="safeArea" id="EG9-wl-AeF"/>
                     </view>
                     <navigationItem key="navigationItem" title="每日分享" id="a0A-nI-R3F"/>
+                    <connections>
+                        <outlet property="tableView" destination="uGX-kf-TDO" id="LDn-h9-zGP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGl-EN-BTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

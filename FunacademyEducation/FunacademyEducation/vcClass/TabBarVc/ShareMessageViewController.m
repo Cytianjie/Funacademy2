@@ -10,6 +10,7 @@
 #import "ShareMessageTableViewCell.h"
 
 
+
 @interface ShareMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray * dataArray;
 @end
@@ -31,6 +32,10 @@
 //    } Failure:^(NSURLSessionTask * _Nonnull task, NSError * _Nonnull error) {
 //        
 //    }];
+   
+    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
+        NSLog(@"------->>>>suaxin");
+    }];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;

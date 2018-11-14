@@ -272,6 +272,9 @@
                         <viewLayoutGuide key="safeArea" id="EG9-wl-AeF"/>
                     </view>
                     <navigationItem key="navigationItem" title="每日分享" id="a0A-nI-R3F"/>
+                    <connections>
+                        <outlet property="tableView" destination="uGX-kf-TDO" id="LDn-h9-zGP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGl-EN-BTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

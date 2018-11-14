@@ -16,6 +16,9 @@
 #import "LoadDataSuggest.h"
 #import <Hyphenate/Hyphenate.h>
 #import "MyAlerView.h"
+#import "UIImageView+WebCache.h"
+#import "TJToolsClass.h"
+#import "FAMJMJRefreshManagement.h"
 
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)

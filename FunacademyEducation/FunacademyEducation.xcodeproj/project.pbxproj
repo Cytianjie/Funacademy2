@@ -168,6 +168,9 @@
 		B378935B219BE35E00C29264 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B378935A219BE35E00C29264 /* Hyphenate.framework */; };
 		B378935D219BE36B00C29264 /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B378935A219BE35E00C29264 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B37893A7219BF36800C29264 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B37893A9219BF36800C29264 /* Localizable.strings */; };
+		B37893AD219C168400C29264 /* JHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893AB219C168300C29264 /* JHScrollView.m */; };
+		B37893B1219C17E300C29264 /* TJToolsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893B0219C17E300C29264 /* TJToolsClass.m */; };
+		B37893B4219C20C700C29264 /* FAMJMJRefreshManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -545,6 +548,12 @@
 		B37893A4219BF1F700C29264 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B37893A8219BF36800C29264 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B37893AA219BF36B00C29264 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B37893AB219C168300C29264 /* JHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScrollView.m; sourceTree = "<group>"; };
+		B37893AC219C168400C29264 /* JHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScrollView.h; sourceTree = "<group>"; };
+		B37893AF219C17E200C29264 /* TJToolsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJToolsClass.h; sourceTree = "<group>"; };
+		B37893B0219C17E300C29264 /* TJToolsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJToolsClass.m; sourceTree = "<group>"; };
+		B37893B2219C20C700C29264 /* FAMJMJRefreshManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAMJMJRefreshManagement.h; sourceTree = "<group>"; };
+		B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAMJMJRefreshManagement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1222,6 +1231,7 @@
 				B35CD09D219949D300960D97 /* vcModel */,
 				B35CD09E21994A1000960D97 /* libs */,
 				B35CD0BA21995CDF00960D97 /* PackagingManagement */,
+				B37893AE219C17C100C29264 /* Tools */,
 				B35CD0722199469000960D97 /* Assets.xcassets */,
 				B35CD0742199469000960D97 /* LaunchScreen.storyboard */,
 				B35CD0772199469000960D97 /* Info.plist */,
@@ -1311,6 +1321,8 @@
 		B35CD0B3219954F500960D97 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
+				B37893AC219C168400C29264 /* JHScrollView.h */,
+				B37893AB219C168300C29264 /* JHScrollView.m */,
 				B35CD0B42199552600960D97 /* ShareMessageTableViewCell.h */,
 				B35CD0B52199552600960D97 /* ShareMessageTableViewCell.m */,
 			);
@@ -1320,6 +1332,7 @@
 		B35CD0BA21995CDF00960D97 /* PackagingManagement */ = {
 			isa = PBXGroup;
 			children = (
+				B37893B5219C20D900C29264 /* MJRefreshManagement */,
 				B33D15E9219A5A52007139DD /* NetWorkingManagement */,
 				B35CD0BB2199608100960D97 /* CoreDataManagement */,
 			);
@@ -1399,6 +1412,24 @@
 				B378935A219BE35E00C29264 /* Hyphenate.framework */,
 			);
 			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
+		B37893AE219C17C100C29264 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B37893AF219C17E200C29264 /* TJToolsClass.h */,
+				B37893B0219C17E300C29264 /* TJToolsClass.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B37893B5219C20D900C29264 /* MJRefreshManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B37893B2219C20C700C29264 /* FAMJMJRefreshManagement.h */,
+				B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */,
+			);
+			path = MJRefreshManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1538,6 +1569,7 @@
 			files = (
 				B325D549219AE16600A05C16 /* LoginViewController.m in Sources */,
 				B325D512219A855800A05C16 /* UIImage+MultiFormat.m in Sources */,
+				B37893B4219C20C700C29264 /* FAMJMJRefreshManagement.m in Sources */,
 				B325D4C5219A855800A05C16 /* UIViewController+HUD.m in Sources */,
 				B325D4F6219A855800A05C16 /* MWZoomingScrollView.m in Sources */,
 				B325D52A219A855800A05C16 /* EaseChatBarMoreView.m in Sources */,
@@ -1574,6 +1606,7 @@
 				B325D518219A855800A05C16 /* UIImageView+WebCache.m in Sources */,
 				B325D4EC219A855800A05C16 /* EMVoiceConverter.mm in Sources */,
 				B325D509219A855800A05C16 /* PSTCollectionViewLayout.m in Sources */,
+				B37893AD219C168400C29264 /* JHScrollView.m in Sources */,
 				B325D52E219A855800A05C16 /* EaseTextView.m in Sources */,
 				B35CD0D02199824700960D97 /* AFURLSessionManager.m in Sources */,
 				B325D4DF219A855800A05C16 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1649,6 +1682,7 @@
 				B325D52F219A855800A05C16 /* EaseChatToolbar.m in Sources */,
 				B325D51E219A855800A05C16 /* EaseLocationViewController.m in Sources */,
 				B325D500219A855800A05C16 /* PSTCollectionViewCell.m in Sources */,
+				B37893B1219C17E300C29264 /* TJToolsClass.m in Sources */,
 				B325D4F9219A855800A05C16 /* MWPhoto.m in Sources */,
 				B325D4CC219A855800A05C16 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				B325D4D9219A855800A05C16 /* UIView+MJExtension.m in Sources */,

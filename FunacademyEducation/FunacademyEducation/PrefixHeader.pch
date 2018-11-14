@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  FunacademyEducation
+//
+//  Created by 清 on 2018/11/12.
+//  Copyright © 2018 清. All rights reserved.
+//
+
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "CoreDataClasses.h"
+#import "DataConfiguration.h"
+#import "NetUrl.h"
+
+#endif /* PrefixHeader_pch */
+#endif
+
+
+

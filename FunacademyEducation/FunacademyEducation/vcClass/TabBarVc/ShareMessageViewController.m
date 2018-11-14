@@ -19,9 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = NSLocalizedString(@"tab1NavTitle", nil);
     [self setDataConfiguration];
-    //896
-    NSLog(@"---->%f",[UIScreen mainScreen].bounds.size.height);
+    
 }
 -(void)setDataConfiguration{
     //http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6

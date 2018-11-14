@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  FunacademyEducation
+
+  Created by 清 on 2018/11/14.
+  Copyright © 2018 清. All rights reserved.
+*/
+"tab1Title" = "每日分享";//第一个标签栏
+"tab1NavTitle" = "每日分享";//第一个标签栏的导航
+"tab2Title" = "消息";//第二个标签栏
+"tab2NavTitle" = "消息";//第2个标签栏的导航
+"tab3Title" = "联系人";//第3个标签栏
+"tab3NavTitle" = "联系人";//第3个标签栏的导航
+"tab4Title" = "我";//第4个标签栏
+"tab4NavTitle" = "我";//第4个标签栏的导航
+
+"allContent" = "全部";
+"alterCancel" = "取消";
+"netWorkError" = "网络请求失败";

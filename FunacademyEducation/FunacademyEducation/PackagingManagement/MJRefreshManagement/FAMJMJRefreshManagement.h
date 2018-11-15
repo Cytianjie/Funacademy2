@@ -12,12 +12,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef  void (^FAheaderWithRefreshingBlock)(void);
+typedef  void (^FAfooterWithRefreshingBlock)(void);
 
 
 @interface FAMJMJRefreshManagement : NSObject
 
 +(MJRefreshNormalHeader *)faHeaderWithRefreshingBlock:(FAheaderWithRefreshingBlock)faHeaderWithRefreshingBlock;
 
++(MJRefreshAutoNormalFooter *)faFooterWithRefreshingBlock:(FAfooterWithRefreshingBlock)faFooterWithRefreshingBlock;
 @end
 
 NS_ASSUME_NONNULL_END

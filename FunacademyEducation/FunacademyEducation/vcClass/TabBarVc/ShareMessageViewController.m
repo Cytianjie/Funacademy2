@@ -27,11 +27,13 @@
 -(void)setDataConfiguration{
     self.dataArray = [[NSMutableArray alloc]init];
     //http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6
-//    [[NetworkRequestManager manager] GET_URL:@"http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6" withLoading:YES Success:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource, id  _Nullable loadingview) {
-//         
-//    } Failure:^(NSURLSessionTask * _Nonnull task, NSError * _Nonnull error) {
-//        
-//    }];
+    NSMutableDictionary * dic = [[NSMutableDictionary alloc]init];
+    [dic setValue:@"1" forKey:@"page"];
+    [[NetworkRequestManager manager] POST_URL:@"http://140.143.138.195/api/MobileApi/GetDailySharPost/1" Params:dic withLoading:YES Success:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource, id  _Nullable loadingview) {
+         NSLog(@"%@",dataSource);
+    } Failure:^(NSURLSessionTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"errr0r------->>>");
+    }];
    
 //    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
 //        NSLog(@"------->>>>suaxin");

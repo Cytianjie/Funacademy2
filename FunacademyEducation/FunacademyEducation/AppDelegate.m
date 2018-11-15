@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <UMCommon/UMCommon.h>
+#import <UMShare/UMShare.h>
 
 
 @interface AppDelegate ()
@@ -19,16 +21,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //AppKey:注册的AppKey，详细见下面注释。
+    //环信AppKey:注册的AppKey，详细见下面注释。
     //apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
     EMOptions *options = [EMOptions optionsWithAppkey:@"1108181113098974#funacademyeducation"];
     //options.apnsCertName = @"istore_dev";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
+    //友盟
+    [UMConfigure initWithAppkey:@"5bed3a81f1f556598b0000f7" channel:@"App Store"];
+    //友盟分享
+    [self configUSharePlatforms];
     
     return YES;
 }
-
+- (void)configUSharePlatforms{
+    //打开图片水印
+    //[UMSocialGlobal shareInstance].isUsingWaterMark = YES;
+    //关闭强制验证https，可允许http图片分享
+    [UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = NO;
+    /* 设置微信的appKey和appSecret */
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxdc1e388c3822c80b" appSecret:@"3baf1193c85774b3fd9d18447d76cab0" redirectURL:@"http://mobile.umeng.com/social"];
+    //移除相应平台的分享，如微信收藏
+    [[UMSocialManager defaultManager] removePlatformProviderWithPlatformTypes:@[@(UMSocialPlatformType_WechatFavorite)]];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

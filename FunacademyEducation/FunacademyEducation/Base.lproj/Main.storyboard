@@ -431,7 +431,20 @@
                     <view key="view" contentMode="scaleToFill" id="C4x-Lw-gNq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvN-4g-eAq">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="action:" destination="gG9-5c-d3Z" eventType="touchUpInside" id="MrT-V1-Ieh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OvN-4g-eAq" firstAttribute="centerX" secondItem="C4x-Lw-gNq" secondAttribute="centerX" id="IX9-9B-bNu"/>
+                            <constraint firstItem="OvN-4g-eAq" firstAttribute="centerY" secondItem="C4x-Lw-gNq" secondAttribute="centerY" id="yqW-gi-Oct"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Wdd-S1-Igu"/>
                     </view>
                     <navigationItem key="navigationItem" title="我" id="eoY-3n-U86"/>

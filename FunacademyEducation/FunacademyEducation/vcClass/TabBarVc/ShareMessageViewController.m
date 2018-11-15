@@ -7,8 +7,7 @@
 //
 
 #import "ShareMessageViewController.h"
-#import "ShareMessageTableViewCell.h"
-
+#import "PublicFistTableViewController.h"
 
 
 @interface ShareMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -26,6 +25,7 @@
     
 }
 -(void)setDataConfiguration{
+    self.dataArray = [[NSMutableArray alloc]init];
     //http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6
 //    [[NetworkRequestManager manager] GET_URL:@"http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6" withLoading:YES Success:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource, id  _Nullable loadingview) {
 //         
@@ -33,9 +33,9 @@
 //        
 //    }];
    
-    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
-        NSLog(@"------->>>>suaxin");
-    }];
+//    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
+//        NSLog(@"------->>>>suaxin");
+//    }];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
@@ -44,7 +44,8 @@
     return 650;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ShareMessageTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    PublicFistTableViewController * tabVc = [self.storyboard instantiateViewControllerWithIdentifier:@"PublicFistTableViewController"];
+    ShareMessageTableViewCell * cell = [tabVc.tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     return cell;
 }

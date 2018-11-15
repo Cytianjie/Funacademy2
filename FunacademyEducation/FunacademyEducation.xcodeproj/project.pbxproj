@@ -171,6 +171,7 @@
 		B37893AD219C168400C29264 /* JHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893AB219C168300C29264 /* JHScrollView.m */; };
 		B37893B1219C17E300C29264 /* TJToolsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893B0219C17E300C29264 /* TJToolsClass.m */; };
 		B37893B4219C20C700C29264 /* FAMJMJRefreshManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */; };
+		B37D1C6E219D17E4004B5F32 /* PublicFistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37D1C6D219D17E4004B5F32 /* PublicFistTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -554,6 +555,8 @@
 		B37893B0219C17E300C29264 /* TJToolsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJToolsClass.m; sourceTree = "<group>"; };
 		B37893B2219C20C700C29264 /* FAMJMJRefreshManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAMJMJRefreshManagement.h; sourceTree = "<group>"; };
 		B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAMJMJRefreshManagement.m; sourceTree = "<group>"; };
+		B37D1C6C219D17E4004B5F32 /* PublicFistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicFistTableViewController.h; sourceTree = "<group>"; };
+		B37D1C6D219D17E4004B5F32 /* PublicFistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicFistTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1267,6 +1270,7 @@
 		B35CD09B2199499F00960D97 /* vcClass */ = {
 			isa = PBXGroup;
 			children = (
+				B37D1C6B219D178E004B5F32 /* PublicVc */,
 				B325D53D219ACA7E00A05C16 /* LoginVc */,
 				B35CD09F21994B4A00960D97 /* TabBarVc */,
 			);
@@ -1430,6 +1434,15 @@
 				B37893B3219C20C700C29264 /* FAMJMJRefreshManagement.m */,
 			);
 			path = MJRefreshManagement;
+			sourceTree = "<group>";
+		};
+		B37D1C6B219D178E004B5F32 /* PublicVc */ = {
+			isa = PBXGroup;
+			children = (
+				B37D1C6C219D17E4004B5F32 /* PublicFistTableViewController.h */,
+				B37D1C6D219D17E4004B5F32 /* PublicFistTableViewController.m */,
+			);
+			path = PublicVc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1693,6 +1706,7 @@
 				B325D513219A855800A05C16 /* SDWebImageCompat.m in Sources */,
 				B35CD0D12199824700960D97 /* AFURLRequestSerialization.m in Sources */,
 				B325D528219A855800A05C16 /* EaseMessageCell.m in Sources */,
+				B37D1C6E219D17E4004B5F32 /* PublicFistTableViewController.m in Sources */,
 				B325D4F2219A855800A05C16 /* EMAudioPlayerUtil.m in Sources */,
 				B325D505219A855800A05C16 /* PSTGridLayoutSection.m in Sources */,
 				B325D4E2219A855800A05C16 /* MJRefreshGifHeader.m in Sources */,

@@ -12,14 +12,9 @@
 
 +(UIAlertController *)message:(NSString *)message{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
-    
     UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"alterCancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
     }];
-    
     [alert addAction:action];
-    
     return alert;
-   
 }
 @end

@@ -9,15 +9,16 @@
 #import "TJToolsClass.h"
 
 @implementation TJToolsClass
+//返回默认图片
 +(UIImage *)getPlaceholderImage{
     return [UIImage imageNamed:@""];
 }
-+(CGSize)getLableSize:(NSString *)str withFont:(CGFloat)font CgSizemakeWhite:(CGFloat)white{
+//返回一段文字的size
++(CGSize)getTextSize:(NSString *)string withFont:(CGFloat)font withWidth:(CGFloat)width{
     
-    NSMutableParagraphStyle *paragraphStyle           = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.lineBreakMode                      = NSLineBreakByWordWrapping;
-    NSDictionary *attributes                          = @{NSFontAttributeName:[UIFont systemFontOfSize:font], NSParagraphStyleAttributeName:paragraphStyle.copy};
-    return [str boundingRectWithSize:CGSizeMake(white, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
-    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:font], NSParagraphStyleAttributeName:paragraphStyle.copy};
+    return [string boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;    
 }
 @end

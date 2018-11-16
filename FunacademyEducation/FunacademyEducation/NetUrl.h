@@ -9,5 +9,8 @@
 #ifndef NetUrl_h
 #define NetUrl_h
 
+#define HTTPHEADER_URL @"http://140.143.138.195"
+
+#define HOME_DailyShare @"/api/MobileApi/DailySharPost"
 
 #endif /* NetUrl_h */

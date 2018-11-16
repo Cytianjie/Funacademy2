@@ -12,6 +12,7 @@
 
 @interface ShareMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray * dataArray;
+@property(nonatomic,assign)NSInteger page;
 @end
 
 @implementation ShareMessageViewController
@@ -22,22 +23,44 @@
     
     self.navigationItem.title = NSLocalizedString(@"tab1NavTitle", nil);
     [self setDataConfiguration];
+    [self getNetWorkData];
     
 }
 -(void)setDataConfiguration{
     self.dataArray = [[NSMutableArray alloc]init];
+    self.page = 1;
     //http://v.juhe.cn/toutiao/index?type=&key=b8421e57e460addf33510c67277d45e6
-    NSMutableDictionary * dic = [[NSMutableDictionary alloc]init];
-    [dic setValue:@"1" forKey:@"page"];
-    [[NetworkRequestManager manager] POST_URL:@"http://140.143.138.195/api/MobileApi/GetDailySharPost/1" Params:dic withLoading:YES Success:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource, id  _Nullable loadingview) {
-         NSLog(@"%@",dataSource);
-    } Failure:^(NSURLSessionTask * _Nonnull task, NSError * _Nonnull error) {
-        NSLog(@"errr0r------->>>");
+    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
+        [self pullRefreshData];
     }];
-   
-//    self.tableView.mj_header = [FAMJMJRefreshManagement faHeaderWithRefreshingBlock:^{
-//        NSLog(@"------->>>>suaxin");
-//    }];
+    self.tableView.mj_footer = [FAMJMJRefreshManagement faFooterWithRefreshingBlock:^{
+        [self loadingMoreData];
+    }];
+}
+-(void)pullRefreshData{
+    self.page = 1;
+    [self.tableView.mj_footer resetNoMoreData];
+    [self getNetWorkData];
+    
+}
+-(void)loadingMoreData{
+    self.page++;
+    [self getNetWorkData];
+}
+-(void)getNetWorkData{
+    NSMutableDictionary * paramsDic = [[NSMutableDictionary alloc]init];
+    [paramsDic setValue:[NSString stringWithFormat:@"%ld",(long)self.page] forKey:@"page"];
+    [paramsDic setValue:@"1" forKey:@"uid"];
+    [paramsDic setValue:@"1" forKey:@"classid"];
+    [[NetworkRequestManager manager] POST_URL_HttpHeader:HTTPHEADER_URL url:HOME_DailyShare params:paramsDic withLoading:YES isFailureAlter:YES successBlock:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource) {
+        NSLog(@"%@",dataSource);
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+    } failureBlock:^(NSURLSessionTask * _Nonnull task, NSString * _Nonnull errorMessage, NSError * _Nullable error) {
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;

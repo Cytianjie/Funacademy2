@@ -187,6 +187,7 @@
 		B37D1D4A219D629E004B5F32 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D49219D629E004B5F32 /* CoreTelephony.framework */; };
 		B37D1D4C219D62B1004B5F32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D4B219D62B1004B5F32 /* libc++.tbd */; };
 		B37D1D4E219D62BA004B5F32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D4D219D62BA004B5F32 /* libz.tbd */; };
+		B3E28965219EA3A000F87D85 /* AnalysisData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E28964219EA3A000F87D85 /* AnalysisData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -588,6 +589,8 @@
 		B37D1D49219D629E004B5F32 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B37D1D4B219D62B1004B5F32 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B37D1D4D219D62BA004B5F32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B3E28963219EA3A000F87D85 /* AnalysisData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysisData.h; sourceTree = "<group>"; };
+		B3E28964219EA3A000F87D85 /* AnalysisData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalysisData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1280,16 +1283,17 @@
 				B35CD09E21994A1000960D97 /* libs */,
 				B35CD0BA21995CDF00960D97 /* PackagingManagement */,
 				B37893AE219C17C100C29264 /* Tools */,
-				B35CD0722199469000960D97 /* Assets.xcassets */,
-				B35CD0742199469000960D97 /* LaunchScreen.storyboard */,
+				B3E28962219E6FBB00F87D85 /* AnalysisDataModel */,
+				B35CD06F2199468F00960D97 /* FunacademyEducation.xcdatamodeld */,
 				B35CD0772199469000960D97 /* Info.plist */,
-				B37893A9219BF36800C29264 /* Localizable.strings */,
 				B35CD0782199469000960D97 /* main.m */,
 				B35CD0A321994C4700960D97 /* PrefixHeader.pch */,
 				B35CD0B72199590100960D97 /* CoreDataClasses.h */,
 				B35CD0B82199599300960D97 /* DataConfiguration.h */,
 				B35CD0B9219959B900960D97 /* NetUrl.h */,
-				B35CD06F2199468F00960D97 /* FunacademyEducation.xcdatamodeld */,
+				B35CD0742199469000960D97 /* LaunchScreen.storyboard */,
+				B37893A9219BF36800C29264 /* Localizable.strings */,
+				B35CD0722199469000960D97 /* Assets.xcassets */,
 			);
 			path = FunacademyEducation;
 			sourceTree = "<group>";
@@ -1625,6 +1629,15 @@
 			path = WeChat;
 			sourceTree = "<group>";
 		};
+		B3E28962219E6FBB00F87D85 /* AnalysisDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3E28963219EA3A000F87D85 /* AnalysisData.h */,
+				B3E28964219EA3A000F87D85 /* AnalysisData.m */,
+			);
+			path = AnalysisDataModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1894,6 +1907,7 @@
 				B325D4E2219A855800A05C16 /* MJRefreshGifHeader.m in Sources */,
 				B325D4F4219A855800A05C16 /* MWPhotoBrowser.m in Sources */,
 				B325D508219A855800A05C16 /* PSTGridLayoutRow.m in Sources */,
+				B3E28965219EA3A000F87D85 /* AnalysisData.m in Sources */,
 				B35CD0EF219982FF00960D97 /* UIWebView+AFNetworking.m in Sources */,
 				B325D527219A855800A05C16 /* EaseCustomMessageCell.m in Sources */,
 				B35CD0AC2199510F00960D97 /* MessageViewController.m in Sources */,

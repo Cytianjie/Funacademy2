@@ -30,42 +30,85 @@
         sessionManager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
         sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",@"text/html",@"text/json",@"text/plain",@"text/javascript",@"text/xml",@"image/*"]];
     });
-    
     return sessionManager;;
-    
 }
--(void)POST_URL:(NSString *)url Params:(NSDictionary *)params withLoading:(BOOL)isLoading Success:(ResponseSuccess)success Failure:(ResponseFailure)failure{
+-(void)POST_URL_HttpHeader:(NSString *)header url:(NSString *)url params:(NSDictionary *)params withLoading:(BOOL)isLoading isFailureAlter:(BOOL)isAlter successBlock:(ResponseSuccess)success failureBlock:(ResponseFailure)failure{
     TJLoading * laoding;
     if (isLoading) {
         laoding = [TJLoading LoadingAppear];
     }
     AFHTTPSessionManager * session = [NetworkRequestManager sessionManager];
-    [session POST:url parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    NSLog(@"--url--->%@",[NSString stringWithFormat:@"%@%@",header,url]);
+    NSLog(@"--params-->%@",params);
+    [session POST:[NSString stringWithFormat:@"%@%@",header,url] parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         ;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(task,responseObject,laoding);
+        BOOL isOk = NO;
+        if (responseObject) {
+            NSString * result = responseObject[@"result"];
+            if ([result isEqualToString:@"ok"]) {
+                isOk = YES;
+            }
+        }
+        if (isOk == YES) {
+            success(task,responseObject);
+        }else{
+            NSString * message = @"";
+            if (responseObject[@"message"]) {
+                message = responseObject[@"message"];
+            }
+            failure(task,message,nil);
+            if (isAlter == YES) {
+                [LoadDataSuggest showFailWith:message];
+            }
+        }
+        
         [laoding loadingDisappear];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        failure(task,@"",error);
         [laoding loadingDisappear];
-        [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
+        if (isAlter == YES) {
+            [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
+        }
     }];
 }
--(void)GET_URL:(NSString *)url withLoading:(BOOL)isLoading Success:(ResponseSuccess)success Failure:(ResponseFailure)failure{
+
+-(void)GET_URL_HttpHeader:(NSString *)header url:(NSString *)url withLoading:(BOOL)isLoading isFailureAlter:(BOOL)isAlter successBlock:(ResponseSuccess)success failureBlock:(ResponseFailure)failure{
     TJLoading * laoding;
     if (isLoading) {
         laoding = [TJLoading LoadingAppear];
     }
     AFHTTPSessionManager * session = [NetworkRequestManager sessionManager];
-    [session GET:url parameters:nil headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [session GET:[NSString stringWithFormat:@"%@%@",header,url] parameters:nil headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(task,responseObject,laoding);
+        BOOL isOk = NO;
+        if (responseObject) {
+            NSString * result = responseObject[@"result"];
+            if ([result isEqualToString:@"ok"]) {
+                isOk = YES;
+            }
+        }
+        if (isOk == YES) {
+            success(task,responseObject);
+        }else{
+            NSString * message = @"";
+            if (responseObject[@"message"]) {
+                message = responseObject[@"message"];
+            }
+            failure(task,message,nil);
+            if (isAlter == YES) {
+                [LoadDataSuggest showFailWith:message];
+            }
+        }
+        
         [laoding loadingDisappear];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        failure(task,@"",error);
         [laoding loadingDisappear];
-        [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
+        if (isAlter == YES) {
+            [LoadDataSuggest showFailWith:NSLocalizedString(@"netWorkError", nil)];
+        }
     }];
 }
 @end

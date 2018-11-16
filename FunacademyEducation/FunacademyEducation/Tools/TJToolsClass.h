@@ -21,10 +21,10 @@
 /**
  <#Description#>
 
- @param str <#str description#>
+ @param string <#str description#>
  @param font <#font description#>
- @param white <#white description#>
+ @param width <#white description#>
  @return 返回一段文字的size
  */
-+(CGSize)getLableSize:(NSString *)str withFont:(CGFloat)font CgSizemakeWhite:(CGFloat)white;
++(CGSize)getTextSize:(NSString *)string withFont:(CGFloat)font withWidth:(CGFloat)width;
 @end

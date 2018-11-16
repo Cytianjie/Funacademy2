@@ -94,43 +94,43 @@
                                             </constraints>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白开水" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0w-SC-O08">
-                                            <rect key="frame" x="56" y="8" width="52" height="20.5"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <rect key="frame" x="56" y="8" width="58.5" height="23"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-11-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwD-Fr-xl2">
-                                            <rect key="frame" x="56" y="32" width="68" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <rect key="frame" x="56" y="31" width="72.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PK1(中1班)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAU-Uy-SLr">
-                                            <rect key="frame" x="293" y="8" width="74" height="18"/>
+                                            <rect key="frame" x="293" y="12" width="74" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-Tr-gGd">
-                                            <rect key="frame" x="8" y="56" width="359" height="100.5"/>
+                                            <rect key="frame" x="8" y="56" width="359" height="115"/>
                                             <string key="text">新华社北京11月12日电 外交部发言人陆慷12日宣布：应巴布亚新几内亚独立国总督达达埃和总理奥尼尔、文莱达鲁萨兰国苏丹哈桑纳尔、菲律宾共和国总统杜特尔特邀请，国家主席习近平将于11月15日至21日对上述三国进行国事访问，并在巴新同建交太平洋岛国领导人会晤。其间，应巴布亚新几内亚独立国总理奥尼尔邀请，国家主席习近平将于11月17日至18日出席在巴新莫尔兹比港举行的亚太经合组织第二十六次领导人非正式会议。</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWg-V7-nff">
-                                            <rect key="frame" x="8" y="164.5" width="30" height="20"/>
+                                            <rect key="frame" x="8" y="179" width="33" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="B6h-Lb-LDV"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <state key="normal" title="全部">
                                                 <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoG-9h-9de">
-                                            <rect key="frame" x="8" y="192.5" width="359" height="422"/>
+                                            <rect key="frame" x="8" y="207" width="359" height="402.5"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-Df-m7O">
                                                     <rect key="frame" x="0.0" y="0.0" width="116.5" height="116.5"/>
@@ -273,7 +273,7 @@
                                         <constraint firstItem="G6B-Tr-gGd" firstAttribute="leading" secondItem="wgi-ns-ErJ" secondAttribute="leading" constant="8" id="FhM-qv-HcN"/>
                                         <constraint firstItem="eWg-V7-nff" firstAttribute="leading" secondItem="wgi-ns-ErJ" secondAttribute="leading" constant="8" id="HIE-HW-Y7r"/>
                                         <constraint firstAttribute="trailing" secondItem="G6B-Tr-gGd" secondAttribute="trailing" constant="8" id="LJf-UH-8ge"/>
-                                        <constraint firstItem="1oF-aC-YRu" firstAttribute="top" secondItem="IoG-9h-9de" secondAttribute="bottom" id="U8M-Xy-sbS"/>
+                                        <constraint firstItem="1oF-aC-YRu" firstAttribute="top" secondItem="IoG-9h-9de" secondAttribute="bottom" constant="5" id="U8M-Xy-sbS"/>
                                         <constraint firstItem="mIq-iG-Jxe" firstAttribute="leading" secondItem="wgi-ns-ErJ" secondAttribute="leading" constant="8" id="U9q-w6-fBk"/>
                                         <constraint firstItem="N0w-SC-O08" firstAttribute="top" secondItem="mIq-iG-Jxe" secondAttribute="top" id="aeD-hX-8Zi"/>
                                         <constraint firstItem="eWg-V7-nff" firstAttribute="top" secondItem="G6B-Tr-gGd" secondAttribute="bottom" constant="8" id="ddQ-ym-93L"/>
@@ -287,7 +287,7 @@
                                         <constraint firstItem="1oF-aC-YRu" firstAttribute="leading" secondItem="wgi-ns-ErJ" secondAttribute="leading" id="rSO-6M-8el"/>
                                         <constraint firstAttribute="trailing" secondItem="VAU-Uy-SLr" secondAttribute="trailing" constant="8" id="rWF-zC-zg8"/>
                                         <constraint firstItem="mwD-Fr-xl2" firstAttribute="leading" secondItem="mIq-iG-Jxe" secondAttribute="trailing" constant="8" id="szb-oT-Pyx"/>
-                                        <constraint firstItem="VAU-Uy-SLr" firstAttribute="top" secondItem="wgi-ns-ErJ" secondAttribute="top" constant="8" id="uQq-H9-Yyt"/>
+                                        <constraint firstItem="VAU-Uy-SLr" firstAttribute="top" secondItem="wgi-ns-ErJ" secondAttribute="top" constant="12" id="uQq-H9-Yyt"/>
                                         <constraint firstItem="IoG-9h-9de" firstAttribute="top" secondItem="eWg-V7-nff" secondAttribute="bottom" constant="8" id="yTD-Zu-ghE"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -314,7 +314,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login614x736" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-YY-VKy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-YY-VKy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVq-Du-AK1">
@@ -621,6 +621,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login614x736" width="375" height="667"/>
+        <image name="launchScreenImage" width="750" height="1334"/>
     </resources>
 </document>

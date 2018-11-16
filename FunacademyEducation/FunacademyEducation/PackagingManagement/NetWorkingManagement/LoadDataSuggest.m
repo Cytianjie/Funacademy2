@@ -7,6 +7,7 @@
 //
 
 #import "LoadDataSuggest.h"
+#import "AppDelegate.h"
 
 @implementation LoadDataSuggest
 static LoadDataSuggest *loadDataSuggest = nil;

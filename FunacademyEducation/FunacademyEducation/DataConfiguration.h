@@ -19,6 +19,7 @@
 #import "UIImageView+WebCache.h"
 #import "TJToolsClass.h"
 #import "FAMJMJRefreshManagement.h"
+#import "CoreDataManagement.h"
 
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)

@@ -47,7 +47,7 @@
     // 设置字体
     //footer.stateLabel.font = [UIFont systemFontOfSize:17];
     // 设置颜色
-    //footer.stateLabel.textColor = [UIColor blueColor];
+    //footer.stateLabel.textColor = [UIColor groupTableViewBackgroundColor];
     
     return footer;
 }

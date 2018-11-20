@@ -17,3 +17,8 @@
 "allContent" = "all";
 "alterCancel" = "cancel";
 "netWorkError" = "network request failed";
+
+"postDetails" = "postDetails";
+"enterComments" = "please enter comments";
+"send" = "send";
+"inputNoEmpty" = "input cannot be empty";

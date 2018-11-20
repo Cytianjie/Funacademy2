@@ -14,11 +14,11 @@
     return [UIImage imageNamed:@""];
 }
 //返回一段文字的size
-+(CGSize)getTextSize:(NSString *)string withFont:(CGFloat)font withWidth:(CGFloat)width{
++(CGSize)getTextSize:(NSString *)string withFont:(UIFont *)font withWidth:(CGFloat)width{
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
-    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:font], NSParagraphStyleAttributeName:paragraphStyle.copy};
+    NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle.copy};
     return [string boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;    
 }
 @end

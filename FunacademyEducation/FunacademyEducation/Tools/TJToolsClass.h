@@ -26,5 +26,5 @@
  @param width <#white description#>
  @return 返回一段文字的size
  */
-+(CGSize)getTextSize:(NSString *)string withFont:(CGFloat)font withWidth:(CGFloat)width;
++(CGSize)getTextSize:(NSString *)string withFont:(UIFont *)font withWidth:(CGFloat)width;
 @end

@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="DBShareMessage" representedClassName="DBShareMessage" syncable="YES" codeGenerationType="class">
         <attribute name="cellHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cellHeightMax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="classID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="classNamed" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="commentsCount" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,6 +15,7 @@
         <attribute name="imageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="imageHeightMax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="imageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isclicklike" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="likeCount" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="postContent" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="postTitle" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,6 +24,6 @@
         <relationship name="hasPostResource" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="DBShareMessage" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DBShareMessage" positionX="-63" positionY="-18" width="128" height="330"/>
+        <element name="DBShareMessage" positionX="-63" positionY="-18" width="128" height="360"/>
     </elements>
 </model>

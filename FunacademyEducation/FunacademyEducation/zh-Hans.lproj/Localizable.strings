@@ -17,3 +17,8 @@
 "allContent" = "全部";
 "alterCancel" = "取消";
 "netWorkError" = "网络请求失败";
+
+"postDetails" = "帖子详情";
+"enterComments" = "请输入";
+"send" = "发送";
+"inputNoEmpty" = "输入不能为空";

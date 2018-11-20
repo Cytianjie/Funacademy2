@@ -187,6 +187,14 @@
 		B37D1D4A219D629E004B5F32 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D49219D629E004B5F32 /* CoreTelephony.framework */; };
 		B37D1D4C219D62B1004B5F32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D4B219D62B1004B5F32 /* libc++.tbd */; };
 		B37D1D4E219D62BA004B5F32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D1D4D219D62BA004B5F32 /* libz.tbd */; };
+		B3CD673621A25BC00028B8B0 /* DayShareDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD673521A25BC00028B8B0 /* DayShareDetailsViewController.m */; };
+		B3CD673C21A267150028B8B0 /* ChatPhoneCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD673A21A267150028B8B0 /* ChatPhoneCollectionViewCell.m */; };
+		B3CD673D21A267150028B8B0 /* ChatPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD673B21A267150028B8B0 /* ChatPhotoBrowserView.m */; };
+		B3CD674021A26A260028B8B0 /* PhotoBrowsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD673F21A26A260028B8B0 /* PhotoBrowsingViewController.m */; };
+		B3CD674621A29BC70028B8B0 /* CommentsKeyWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD674521A29BC70028B8B0 /* CommentsKeyWordView.m */; };
+		B3CD674821A29BE20028B8B0 /* CommentsKeyWordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CD674721A29BE20028B8B0 /* CommentsKeyWordView.xib */; };
+		B3CD674B21A2B3C10028B8B0 /* ExpressionKeyWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CD674A21A2B3C10028B8B0 /* ExpressionKeyWordView.m */; };
+		B3CD674D21A2B3D30028B8B0 /* ExpressionKeyWordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CD674C21A2B3D30028B8B0 /* ExpressionKeyWordView.xib */; };
 		B3E28965219EA3A000F87D85 /* AnalysisData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E28964219EA3A000F87D85 /* AnalysisData.m */; };
 /* End PBXBuildFile section */
 
@@ -589,6 +597,20 @@
 		B37D1D49219D629E004B5F32 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B37D1D4B219D62B1004B5F32 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B37D1D4D219D62BA004B5F32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B3CD673421A25BC00028B8B0 /* DayShareDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayShareDetailsViewController.h; sourceTree = "<group>"; };
+		B3CD673521A25BC00028B8B0 /* DayShareDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayShareDetailsViewController.m; sourceTree = "<group>"; };
+		B3CD673821A267150028B8B0 /* ChatPhoneCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatPhoneCollectionViewCell.h; sourceTree = "<group>"; };
+		B3CD673921A267150028B8B0 /* ChatPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatPhotoBrowserView.h; sourceTree = "<group>"; };
+		B3CD673A21A267150028B8B0 /* ChatPhoneCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPhoneCollectionViewCell.m; sourceTree = "<group>"; };
+		B3CD673B21A267150028B8B0 /* ChatPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPhotoBrowserView.m; sourceTree = "<group>"; };
+		B3CD673E21A26A260028B8B0 /* PhotoBrowsingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowsingViewController.h; sourceTree = "<group>"; };
+		B3CD673F21A26A260028B8B0 /* PhotoBrowsingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowsingViewController.m; sourceTree = "<group>"; };
+		B3CD674421A29BC70028B8B0 /* CommentsKeyWordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentsKeyWordView.h; sourceTree = "<group>"; };
+		B3CD674521A29BC70028B8B0 /* CommentsKeyWordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentsKeyWordView.m; sourceTree = "<group>"; };
+		B3CD674721A29BE20028B8B0 /* CommentsKeyWordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsKeyWordView.xib; sourceTree = "<group>"; };
+		B3CD674921A2B3C10028B8B0 /* ExpressionKeyWordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionKeyWordView.h; sourceTree = "<group>"; };
+		B3CD674A21A2B3C10028B8B0 /* ExpressionKeyWordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpressionKeyWordView.m; sourceTree = "<group>"; };
+		B3CD674C21A2B3D30028B8B0 /* ExpressionKeyWordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpressionKeyWordView.xib; sourceTree = "<group>"; };
 		B3E28963219EA3A000F87D85 /* AnalysisData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysisData.h; sourceTree = "<group>"; };
 		B3E28964219EA3A000F87D85 /* AnalysisData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalysisData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1322,6 +1344,7 @@
 				B37D1C6B219D178E004B5F32 /* PublicVc */,
 				B325D53D219ACA7E00A05C16 /* LoginVc */,
 				B35CD09F21994B4A00960D97 /* TabBarVc */,
+				B3CD673321A25B7B0028B8B0 /* DayShareVc */,
 			);
 			path = vcClass;
 			sourceTree = "<group>";
@@ -1456,6 +1479,13 @@
 			children = (
 				B3789356219BD19D00C29264 /* MyAlerView.h */,
 				B3789357219BD19D00C29264 /* MyAlerView.m */,
+				B3CD674921A2B3C10028B8B0 /* ExpressionKeyWordView.h */,
+				B3CD674A21A2B3C10028B8B0 /* ExpressionKeyWordView.m */,
+				B3CD674C21A2B3D30028B8B0 /* ExpressionKeyWordView.xib */,
+				B3CD674421A29BC70028B8B0 /* CommentsKeyWordView.h */,
+				B3CD674521A29BC70028B8B0 /* CommentsKeyWordView.m */,
+				B3CD674721A29BE20028B8B0 /* CommentsKeyWordView.xib */,
+				B3CD673721A267150028B8B0 /* ChatPhotoBrowserController */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -1629,6 +1659,28 @@
 			path = WeChat;
 			sourceTree = "<group>";
 		};
+		B3CD673321A25B7B0028B8B0 /* DayShareVc */ = {
+			isa = PBXGroup;
+			children = (
+				B3CD673421A25BC00028B8B0 /* DayShareDetailsViewController.h */,
+				B3CD673521A25BC00028B8B0 /* DayShareDetailsViewController.m */,
+				B3CD673E21A26A260028B8B0 /* PhotoBrowsingViewController.h */,
+				B3CD673F21A26A260028B8B0 /* PhotoBrowsingViewController.m */,
+			);
+			path = DayShareVc;
+			sourceTree = "<group>";
+		};
+		B3CD673721A267150028B8B0 /* ChatPhotoBrowserController */ = {
+			isa = PBXGroup;
+			children = (
+				B3CD673921A267150028B8B0 /* ChatPhotoBrowserView.h */,
+				B3CD673B21A267150028B8B0 /* ChatPhotoBrowserView.m */,
+				B3CD673821A267150028B8B0 /* ChatPhoneCollectionViewCell.h */,
+				B3CD673A21A267150028B8B0 /* ChatPhoneCollectionViewCell.m */,
+			);
+			path = ChatPhotoBrowserController;
+			sourceTree = "<group>";
+		};
 		B3E28962219E6FBB00F87D85 /* AnalysisDataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1744,12 +1796,14 @@
 			files = (
 				B35CD0762199469000960D97 /* LaunchScreen.storyboard in Resources */,
 				B325D53B219A855800A05C16 /* EaseUIResource.bundle in Resources */,
+				B3CD674821A29BE20028B8B0 /* CommentsKeyWordView.xib in Resources */,
 				B35CD0732199469000960D97 /* Assets.xcassets in Resources */,
 				B37893A7219BF36800C29264 /* Localizable.strings in Resources */,
 				B325D4D7219A855800A05C16 /* MJRefresh.bundle in Resources */,
 				B35CD06E2199468F00960D97 /* Main.storyboard in Resources */,
 				B325D51B219A855800A05C16 /* MWPhotoBrowser.bundle in Resources */,
 				B37D1D3F219D626C004B5F32 /* UMCommonLog.bundle in Resources */,
+				B3CD674D21A2B3D30028B8B0 /* ExpressionKeyWordView.xib in Resources */,
 				B37D1D43219D626C004B5F32 /* UMSocialSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1783,6 +1837,7 @@
 				B325D52A219A855800A05C16 /* EaseChatBarMoreView.m in Sources */,
 				B325D4E1219A855800A05C16 /* MJRefreshStateHeader.m in Sources */,
 				B325D533219A855800A05C16 /* EaseBubbleView+Location.m in Sources */,
+				B3CD674621A29BC70028B8B0 /* CommentsKeyWordView.m in Sources */,
 				B325D523219A855800A05C16 /* EaseViewController.m in Sources */,
 				B325D4FD219A855800A05C16 /* DACircularProgressView.m in Sources */,
 				B325D525219A855800A05C16 /* EaseConversationCell.m in Sources */,
@@ -1791,6 +1846,8 @@
 				B325D4EF219A855800A05C16 /* EMCDDeviceManager+Media.m in Sources */,
 				B35CD0A9219950FF00960D97 /* ShareMessageViewController.m in Sources */,
 				B325D526219A855800A05C16 /* EaseMessageTimeCell.m in Sources */,
+				B3CD673621A25BC00028B8B0 /* DayShareDetailsViewController.m in Sources */,
+				B3CD673C21A267150028B8B0 /* ChatPhoneCollectionViewCell.m in Sources */,
 				B33D15F2219A6319007139DD /* LoadDataSuggest.m in Sources */,
 				B325D4E5219A855800A05C16 /* MJRefreshBackFooter.m in Sources */,
 				B325D4DA219A855800A05C16 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1799,6 +1856,7 @@
 				B325D51C219A855800A05C16 /* MBProgressHUD.m in Sources */,
 				B325D530219A855800A05C16 /* EaseRecordView.m in Sources */,
 				B325D52D219A855800A05C16 /* EaseFaceView.m in Sources */,
+				B3CD674021A26A260028B8B0 /* PhotoBrowsingViewController.m in Sources */,
 				B325D50D219A855800A05C16 /* SDWebImageManager.m in Sources */,
 				B325D524219A855800A05C16 /* EaseUserCell.m in Sources */,
 				B325D501219A855800A05C16 /* PSTGridLayoutInfo.m in Sources */,
@@ -1887,6 +1945,7 @@
 				B325D4E3219A855800A05C16 /* MJRefreshFooter.m in Sources */,
 				B35CD0CE2199824700960D97 /* AFURLResponseSerialization.m in Sources */,
 				B35CD0EE219982FF00960D97 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				B3CD673D21A267150028B8B0 /* ChatPhotoBrowserView.m in Sources */,
 				B325D52F219A855800A05C16 /* EaseChatToolbar.m in Sources */,
 				B325D51E219A855800A05C16 /* EaseLocationViewController.m in Sources */,
 				B325D500219A855800A05C16 /* PSTCollectionViewCell.m in Sources */,
@@ -1902,6 +1961,7 @@
 				B35CD0D12199824700960D97 /* AFURLRequestSerialization.m in Sources */,
 				B325D528219A855800A05C16 /* EaseMessageCell.m in Sources */,
 				B37D1C6E219D17E4004B5F32 /* PublicFistTableViewController.m in Sources */,
+				B3CD674B21A2B3C10028B8B0 /* ExpressionKeyWordView.m in Sources */,
 				B325D4F2219A855800A05C16 /* EMAudioPlayerUtil.m in Sources */,
 				B325D505219A855800A05C16 /* PSTGridLayoutSection.m in Sources */,
 				B325D4E2219A855800A05C16 /* MJRefreshGifHeader.m in Sources */,

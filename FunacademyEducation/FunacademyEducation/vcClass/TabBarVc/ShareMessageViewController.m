@@ -127,8 +127,22 @@
                  }];
             }
         }];
+    }else if (buttomTag == 1){
+        [self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+    }else{
+        NSMutableDictionary * paramsDic = [[NSMutableDictionary alloc]init];
+        [paramsDic setValue:@"1" forKey:@"uid"];
+        [paramsDic setValue:@"1" forKey:@"usertype"];
+        [paramsDic setValue:@"1" forKey:@"postid"];
+        [[NetworkRequestManager manager] POST_URL_HttpHeader:HTTPHEADER_URL url:HOME_UserClickLike params:paramsDic withLoading:NO isFailureAlter:YES successBlock:^(NSURLSessionTask * _Nonnull task, id  _Nonnull dataSource) {
+            dbModel.isclicklike = @"1";
+            [self.tableView reloadData];
+        } failureBlock:^(NSURLSessionTask * _Nonnull task, NSString * _Nonnull errorMessage, NSError * _Nullable error) {
+            
+        }];
     }
 }
+
 /*
 #pragma mark - Navigation
 

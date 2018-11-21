@@ -72,6 +72,11 @@
         
     }
     
+    if ([model.isclicklike isEqualToString:@"1"]) {
+        [self.giveLikeButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    }else{
+       [self.giveLikeButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    }
 }
 
 -(void)imageButtonClick:(UIButton *)button{

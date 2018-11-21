@@ -11,6 +11,9 @@
 
 #define HTTPHEADER_URL @"http://140.143.138.195"
 
+//每日分享
 #define HOME_DailyShare @"/api/MobileApi/DailySharPost"
+//点赞
+#define HOME_UserClickLike @"/api/MobileApi/UserClickLike"
 
 #endif /* NetUrl_h */

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyAlerView : NSObject
-+(UIAlertController *)message:(NSString *)message;
++(void)alterMessage:(NSString *)message;
 @end
 
 NS_ASSUME_NONNULL_END

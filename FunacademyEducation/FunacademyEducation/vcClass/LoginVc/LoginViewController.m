@@ -40,7 +40,7 @@
 }
 - (IBAction)logInAction:(id)sender {
     if (self.codeTextField.text.length <= 0) {
-        [self presentViewController:[MyAlerView message:@"密码不能为空"] animated:YES completion:nil];
+        [MyAlerView alterMessage:@"密码不能为空"];
         return;
     }else{
        

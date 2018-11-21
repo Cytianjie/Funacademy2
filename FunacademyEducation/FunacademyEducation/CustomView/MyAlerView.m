@@ -7,14 +7,15 @@
 //
 
 #import "MyAlerView.h"
+#import "AppDelegate.h"
 
 @implementation MyAlerView
 
-+(UIAlertController *)message:(NSString *)message{
++(void)alterMessage:(NSString *)message{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"alterCancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
     }];
     [alert addAction:action];
-    return alert;
+    [[AppDelegate getAppDelegate].window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 @end

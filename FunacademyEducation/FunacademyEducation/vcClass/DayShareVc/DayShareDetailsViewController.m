@@ -159,7 +159,7 @@
 }
 -(void)expressionSendButtonClick{
     if (self.keyBoardView.textView.text.length < 1) {
-        [self presentViewController:[MyAlerView message:NSLocalizedString(@"inputNoEmpty", nil)] animated:YES completion:nil];
+        [MyAlerView alterMessage:NSLocalizedString(@"inputNoEmpty", nil)];
         return;
     }
     [self.keyBoardView textViewChuShiStype];
